@@ -1,30 +1,54 @@
-Editorial by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+<div align="center">
+  <h1>👋 Olá, sou a Tatiana Alves</h1>
+  <p><b>Cientista de Dados | Analista de Dados | Apaixonada por transformar dados em decisões de negócio</b></p>
+  
+  <p>
+    <a href="https://linkedin.com">
+      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+    </a>
+    <a href="https://projeto-churn-telecom.streamlit.app">
+      <img src="https://img.shields.io/badge/App_Online-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit App">
+    </a>
+  </p>
+</div>
 
+---
 
-Say hello to Editorial, a blog/magazine-ish template built around a toggleable "locking"
-sidebar (scroll down to see what I mean) and an accordion-style menu. Not the usual landing
-page/portfolio affair you'd expect to see at HTML5 UP, but I figured for my 41st (!!!)
-template I'd change it up a little. Enjoy :)
+## 🚀 Sobre Mim
+Cientista de Dados com experiência prática no desenvolvimento de projetos *end-to-end* utilizando dados públicos e reais. Focada em **resolver problemas de negócio**, atuo em todas as etapas de um projeto: desde a Análise Exploratória de Dados (EDA) e modelagem estatística até ao *deploy* de aplicações web interativas na nuvem
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+---
 
-(* = not included)
+## 🎓 Educação & Formação
+* **Formação em Sistemas de Informação
+* **Especialização / Cursos em Destaque:** 
+  * Formação em Ciência de Dados / Python / Machine Learning ([Comuidade DS])
 
-AJ
-aj@lkn.io | @ajlkn 
+---
 
+## 🛠️ Tecnologias e Ferramentas
+* **Linguagens & Core:** Python 🐍, Pandas, NumPy, Scikit-Learn
+* **Visualização de Dados:** Matplotlib, Seaborn, Streamlit
+* **Versionamento & Deploy:** Git, GitHub, Streamlit Cloud, Jupyter Notebooks
 
-Credits:
+---
 
-	Demo Images:
-		Unsplash (unsplash.com)
+## ⭐ Projeto em Destaque
 
-	Icons:
-		Font Awesome (fontawesome.io)
+### 📊 [Previsão de Churn em Telecomunicações](https://github.com/SEU-UTILIZADOR/NOME-DO-REPOSITORIO-CHURN)
+Um projeto completo desenvolvido para prever o cancelamento de clientes numa operadora, unindo estatística e interatividade para gestores.
 
-	Other:
-		jQuery (jquery.com)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+* **O que o projeto entrega:**
+  * **Análise Exploratória (EDA):** Identificação de perfis de alto e baixo risco (tempo de casa, contratos mensais, suporte técnico e mensalidades).
+  * **Modelo Preditivo:** Regressão Logística treinada e validada em Python.
+  * **Aplicação Web Interativa:** Simulador em tempo real publicado na nuvem.
+* **🔗 Links Úteis:**
+  * [Aceder à Aplicação na Nuvem](https://projeto-churn-telecom.streamlit.app)
+  * [Repositório do Projeto no GitHub](https://github.com/SEU-UTILIZADOR/NOME-DO-REPOSITORIO-CHURN)
+
+---
+
+## 📊 Estatísticas do GitHub
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=SEU-UTILIZADOR&show_icons=true&theme=radical&hide_border=true&include_all_commits=true" alt="GitHub Stats">
+</div>
