@@ -1,195 +1,191 @@
-<!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Portfólio de Ciência de Dados</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatiana Alves | Portfólio de Ciência de Dados</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #0ea5e9;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 3rem 1rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            background: var(--card-bg);
+            border-radius: 16px;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.6rem 1.2rem;
+            background-color: #334155;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: background 0.2s, transform 0.2s;
+        }
+        .btn:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+        .btn-streamlit {
+            background-color: #ff4b4b;
+        }
+        .btn-streamlit:hover {
+            background-color: #e03e3e;
+        }
+        section {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 16px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+            border-bottom: 2px solid #334155;
+            padding-bottom: 0.5rem;
+        }
+        p {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 0.8rem;
+            color: var(--text-muted);
+        }
+        li strong {
+            color: var(--text-main);
+        }
+        .project-card {
+            border-left: 4px solid var(--accent);
+            padding-left: 1rem;
+            margin-top: 1rem;
+        }
+        .project-card h3 {
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+        .project-actions {
+            margin-top: 1.5rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- CABEÇALHO -->
+        <header>
+            <h1>Tatiana Alves</h1>
+            <p class="subtitle">Cientista de Dados | Data Science</p>
+            <div class="social-links">
+                <a href="https://linkedin.com" target="_blank" class="btn">LinkedIn</a>
+                <a href="https://github.com/tatianaalvesx" target="_blank" class="btn">GitHub</a>
+                <a href="https://projeto-churn-telecom.streamlit.app" target="_blank" class="btn btn-streamlit">App Streamlit</a>
+            </div>
+        </header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        <!-- SOBRE MIM -->
+        <section>
+            <h2>🚀 Sobre Mim</h2>
+            <p>Cientista de Dados com experiência prática no desenvolvimento de projetos <em>end-to-end</em> utilizando dados públicos e reais[cite: 2]. Focada em <strong>resolver problemas de negócio</strong>[cite: 2], atuo em todas as etapas de um projeto: desde a Análise Exploratória de Dados (EDA) e modelagem estatística até ao <em>deploy</em> de aplicações web interativas na nuvem[cite: 2].</p>
+        </section>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+        <!-- FERRAMENTAS -->
+        <section>
+            <h2>🛠️ Tecnologias e Ferramentas</h2>
+            <ul>
+                <li><strong>Linguagens & Core:</strong> Python, Pandas, NumPy, Scikit-Learn</li>
+                <li><strong>Visualização & Apps:</strong> Matplotlib, Seaborn, Streamlit</li>
+                <li><strong>Versionamento & Deploy:</strong> Git, GitHub, Streamlit Cloud</li>
+            </ul>
+        </section>
 
-							<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo"><strong>Portfólio de Projetos</strong> de Ciência de Dados</a>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-linkedin"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon solid fa-envelope"><span class="label">Facebook</span></a></li>															
-									</ul>
-								</header>
+        <!-- PROJETOS EM DESTAQUE -->
+        <section>
+            <h2>⭐ Projeto em Destaque</h2>
+            <div class="project-card">
+                <h3>Previsão de Churn em Telecomunicações</h3>
+                <p>Um projeto completo desenvolvido para prever o cancelamento de clientes numa operadora, unindo estatística e interatividade para gestores.</p>
+                <p><strong>O que o projeto entrega:</strong></p>
+                <ul>
+                    <li>✨ Análise Exploratória (EDA) e identificação de perfis de alto risco.</li>
+                    <li>🤖 Modelo Preditivo em Machine Learning rigorosamente validado.</li>
+                    <li>🌐 Simulador interativo em tempo real publicado na nuvem.</li>
+                </ul>
+                <div class="project-actions">
+                    <a href="https://projeto--churn-telecom.streamlit.app" target="_blank" class="btn btn-streamlit">Testar Aplicação</a>
+                    <a href="https://github.com/tatianaalvesx/tatianaalvesx" target="_blank" class="btn">Ver Código</a>
+                </div>
+            </div>
+        </section>
 
-							<!-- Banner -->
-								<section id="banner">
-									<div class="content">
-										<header>
-											<h1>Olá! Seja bem-vindo(a) ao meu portfólio de Ciência de Dados<br />
-											</h1>
-											<p> Aqui, demonstro como utilizo dados e pensamento analítico para solucionar problemas de negócio complexos.<br/>
-												Através de projetos práticos com dados reais, aplico conceitos estatísticos e ferramentas de ponta para transformar grandes volumes de informação em decisões estratégicas.
-											</header>
-										<p></p>
-										</div>
-									<span class="image object">
-										<img src="images/fotoperfil.jpg.jpg" alt="" />
-									</span>
-								</section>
-
-								<!-- Sobre Mim -->
-								<section>
-									<header class="main">
-										<h2>Sobre mim</h2>
-									</header>
-
-									<!-- Content -->
-										<h3 id="content">Meu nome é Tatiana Alves</h3>
-										<p>Com formação em Sistemas de Informação e uma trajetória sólida como Coordenadora de Trade Marketing, uno o rigor técnico à visão de negócio.<br>
-										 Atualmente, foco-me no desenvolvimento de soluções de Ciência de Dados que impactam diretamente a tomada de decisão.<br> 
-										 Possuo inglês nível B2 (Intermediário Avançado) e estou em busca de uma oportunidade para aplicar modelos preditivos e análises avançadas no crescimento de empresas orientadas a dados.</p>
-                                  </section>
-
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Habilidades</h2>
-									</header>
-									<div class="features">
-										<article>
-											<span class="icon fa-gem"></span>
-											<div class="content">
-												<h3>Linguagens de Programação</h3>                                                                                            
-                                                <ul>
-                                                   <li>Python com foco em análise de dados.</li>
-												   <li>Pensamento Estratégico.</li>
-												   <li>Conceitos de ETL.</li>
-                                                </ul>                                                
-                                  		</div>
-										</article>
-										<article>
-											<span class="icon solid fa-paper-plane"></span>
-											<div class="content">
-												<h3>Estatística e Machine Learning</h3>
-												<ul>
-                                                   <li>Estatística descritiva (localização, dispersão,assimetria, Kurtosis,desnidade).</li>
-												   <li>Algoritmos de Regressão, classificação, clusterização e “learn to rank”.</li>
-												   <li>Técnicas de balanceamento  dos dados, seleção de atributos e redução de dimensionalidade.</li>
-                                                   <li>Métrica de performance dos algoritmos (RMSE,MAE, MAPE,Confusion Matrix,Precisão, Recall, Curva ROC, Curva lift, Silhoutte Score,DB-Index).</li>
-                                                   <li>Pacotes de Machine Learning: Sklearn e Scipy.</li>
-												</ul> 
-											</div>
-										</article>
-										<article>
-											<span class="icon solid fa-rocket"></span>
-											<div class="content">
-												<h3>Visualização de Dados</h3>
-												<ul>
-                                                   <li>Matplotlib e Seaborn.</li>
-												   <li>Streamlit.</li>
-                                                </ul>
-											</div>
-										</article>
-										<article>
-											<span class="icon solid fa-signal"></span>
-											<div class="content">
-												<h3>Engenharia de Software</h3>
-												<ul>
-                                                   <li>Git e Github.</li>
-                                                   <li>Streamlit Cloud.</li>
-												</ul>
-											</div>
-										</article>
-									</div>
-								</section>
-                               <!-- Content -->
-								<section>
-									<header class="main">
-										<h2>Experiência Profissionais </h2>
-									</header>
-                                      	<!-- Content -->
-										<h3 id="content">4+ Projetos completos de Ciência de Dados</h3>
-										<p>Construção de soluções de dados para problemas de negócios, próximos dos desafios reais das empresas, utilizando dados públicos de competições  de Ciência de dados, onde eu abordei o problema desde de a concepção do desafio de negócio até a publicação  do algoritmo treinado em produção, utilizando ferramentas de Cloud Computing.</p>
-										
-                                        <h3 id="content">10 + anos de experiência como Coordenadora de Trade Marketing</h3>
-										<p>Especialista em transformar estratégias de marketing em execução de alto impacto no ponto de venda (PDV), com foco em análise de dados para suporte à decisão.<br>
-                                        Inteligência de Mercado & Dados: Análise profunda de KPIs e hábitos de consumo para monitorização da concorrência e identificação de oportunidades de crescimento (Market Share).<br>
-                                        Gestão Estratégica & Orçamental: Responsável pelo planeamento e execução de orçamentos complexos, garantindo o ROI (Retorno sobre o Investimento) das ações de campo.<br>
-                                        Liderança de Equipas & Stakeholders: Gestão de equipas de alta performance e atuação como facilitadora estratégica entre as áreas Comercial, Marketing e Agências Externas.<br>
-                                        Otimização de Processos: Interface direta na conexão de estratégias de marca com as necessidades reais do time de vendas, garantindo a fluidez do sell-out. </p>
-                                </section>                                
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Projetos em Ciência de Dados</h2>
-									</header>
-									<div class="posts">
-										<article>
-											<a href="https://github.com/tatianaalvesx/curry_company_project" class="image"><img src="images/new_logo.jpg" alt="Logo Food Express" style="width: 700px; height: 400px; object-fit: cover;" /></a>
-											<h3>Desenvolvimento de um Painel Gerencial para Negócio com o Streamlit </h3>
-											<p>Nesse projeto, os conceitos de Programação em Python, manipulação de dados, pensamento estratégico e lógica de negócio, junto com ferramentas de desenvolvimento web como o Streamlit e Github, foram usados para desenvolver um painel gerencial com as principais métricas de uma empresa marketplace de delivery de comida na India.</p>
-                                            <p>O resultado final do projeto foi um painel hospedado em um ambiente Cloud e disponibilizado através de um link web. O painel pode ser acessado por qualquer dispositivo conectado na internet. </p>
-											<h4>As ferramentas utilizadas foram:</h4>
-															<ul>
-																<li>Python.</li>
-																<li>Jupyter Lab.</li>
-																<li>Terminal.</li>
-                                                                <li>Streamlit.</li>
-                                                                <li>Streamlit Cloud.</li>
-                                                                <li>Github.</li>
-															</ul>
-
-											<ul class="actions">
-												<li><a href="https://github.com/tatianaalvesx/curry_company_project" class="button">Saiba MAis</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/isaac-smith.jpg.jpg" alt="isaac" style="width: 700px; height: 400px; object-fit: cover;" /></a>
-											<h3>Identificação de imóveis para compra e revenda a fim de maximizar o lucro</h3>
-											<p>identificação de imóveis abaixo do preço médio de venda e definição do preço ideal de revenda, á partir de uma análise exploratória de dados em Python.</p>
-                                            
-                                            <h4>As ferramentas utilizadas foram:</h4>
-															<ul>
-																<li>Python, Pandas,Numpy e Seaborn.</li>
-																<li>Anaconda,Pycharm e Jupyter Notebook.</li>
-																<li>Mapas interativos com Platy e Folium.</li>
-                                                                <li>Heroku cloud.</li>
-                                                                <li>Streamlit Python framework web.</li>
-                                                            </ul>
-											<ul class="actions">
-												<li><a href="#" class="button">Saiba Mais</a></li>
-											</ul>																	
-										</div>
-								</section>
-
-                        <section>
-						<header class="major">
-										<h2>Entre contato</h2>
-									</header>
-									<p>Sinta-se à vontade para entrar em contato.</p>
-									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="#">tatiana.portfoliox@gmail.com</a></li>
-										<li class="icon brands fa-linkedin"><a href="#">tatiana.portfoliox@gmail.com</a></li>
-									</ul>
-                                  </section>
-						</div>
-					</div>
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+        <!-- RODAPÉ -->
+        <footer>
+            <p>&copy; 2026 Tatiana Alves. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
 </html>
