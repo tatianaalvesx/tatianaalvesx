@@ -6,8 +6,7 @@
     <a href="https://linkedin.com">
       <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
     </a>
-    <a href="https://projeto-churn-telecom.streamlit.app">
-      <img src="https://img.shields.io/badge/App_Online-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit App">
+    <a href="https://projeto--churn-telecom.streamlit.app/">
     </a>
   </p>
 </div>
@@ -43,7 +42,7 @@ Um projeto completo desenvolvido para prever o cancelamento de clientes numa ope
   * **Modelo Preditivo:** Regressão Logística treinada e validada em Python.
   * **Aplicação Web Interativa:** Simulador em tempo real publicado na nuvem.
 * **🔗 Links Úteis:**
-  * [Aceder à Aplicação na Nuvem](https://projeto-churn-telecom.streamlit.app)
+  * [Acesso à Aplicação na Nuvem](https://projeto--churn-telecom.streamlit.app/)
   * [Repositório do Projeto no GitHub](https://github.com/SEU-UTILIZADOR/NOME-DO-REPOSITORIO-CHURN)
 
 ---
