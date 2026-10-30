@@ -10,11 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-color: #f8fafc;
+            --bg-color: #edf2f7;
             --card-bg: #ffffff;
             --text-main: #0f172a;
             --text-muted: #475569;
-            --border-color: #e2e8f0;
+            --border-color: #cbd5e1;
             --accent: #2563eb;
             --accent-hover: #1d4ed8;
             --streamlit-btn: #dc2626;
@@ -155,10 +155,10 @@
             gap: 0.8rem;
             flex-wrap: wrap;
         }
-        /* HABILIDADES / FERRAMENTAS */
+        /* HABILIDADES E FERRAMENTAS */
         .skills-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 1rem;
             margin-top: 1rem;
         }
@@ -187,17 +187,22 @@
             border-radius: 6px;
             font-weight: 500;
         }
-        /* CONTACTO & RODAPÉ */
-        .contact-section {
+        /* RODAPÉ MINIMALISTA */
+        .footer-section {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 2rem;
+            border-radius: 16px;
             text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            margin-top: 1.5rem;
         }
         .email-link {
             display: inline-block;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             font-weight: 600;
             color: var(--accent);
             text-decoration: none;
-            margin-top: 0.5rem;
             margin-bottom: 1rem;
         }
         .email-link:hover {
@@ -208,23 +213,24 @@
             justify-content: center;
             gap: 0.8rem;
             flex-wrap: wrap;
-            margin-top: 1rem;
+            margin-bottom: 1.5rem;
         }
-        footer {
-            text-align: center;
-            margin-top: 2.5rem;
+        .copyright {
             color: var(--text-muted);
             font-size: 0.85rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1rem;
+            margin-top: 1rem;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- CABEÇALHO & FOTO DE PERFIL (Apenas Identidade) -->
+        <!-- CABEÇALHO & FOTO DE PERFIL -->
         <header>
             <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80" alt="Tatiana Alves" class="profile-pic">
             <h1>Tatiana Alves</h1>
-            <p class="subtitle">Cientista de Dados | Data Scientist </p>
+            <p class="subtitle">Cientista de Dados | Data Scientist</p>
         </header>
 
         <!-- SOBRE MIM -->
@@ -237,7 +243,7 @@
         <section>
             <h2>Projetos em Destaque</h2>
             <div class="project-grid">
-                <!-- Projeto 1 -->
+                <!-- Projeto Churn Telecom -->
                 <div class="project-card">
                     <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=80" alt="Capa Projeto Churn" class="project-img">
                     <div class="project-content">
@@ -246,7 +252,7 @@
                         <p><strong>Destaques:</strong> Análise Exploratória (EDA), Machine Learning Preditivo e Simulador Web Interativo.</p>
                         <div class="project-actions">
                             <a href="https://projeto-churn-telecom.streamlit.app" target="_blank" class="btn btn-streamlit">Testar Aplicação no Streamlit</a>
-                            <a href="https://github.com/tatianaalvesx/tatianaalvesx" target="_blank" class="btn">Ver Código</a>
+                            <a href="https://github.com/tatianaalvesx/projeto-churn-telecom" target="_blank" class="btn">Ver Código</a>
                         </div>
                     </div>
                 </div>
@@ -256,21 +262,27 @@
         <!-- HABILIDADES E FERRAMENTAS -->
         <section>
             <h2>Tecnologias e Habilidades</h2>
-            <p>Ferramentas e competências aplicadas nos projetos do portfólio, expandidas de forma contínua:</p>
+            <p>Competências aplicadas em projetos práticos, estruturadas conforme as exigências do mercado:</p>
             <div class="skills-container">
                 <div class="skill-category">
-                    <h4>Core & Linguagens</h4>
+                    <h4>Linguagens</h4>
                     <div class="skill-tags">
                         <span class="tag">Python</span>
-                        <span class="tag">Pandas</span>
-                        <span class="tag">NumPy</span>
+                        <span class="tag">SQL</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h4>Machine Learning & Análise</h4>
+                    <h4>Manipulação & Análise</h4>
+                    <div class="skill-tags">
+                        <span class="tag">Pandas</span>
+                        <span class="tag">NumPy</span>
+                        <span class="tag">EDA</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Machine Learning & Visão</h4>
                     <div class="skill-tags">
                         <span class="tag">Scikit-Learn</span>
-                        <span class="tag">EDA</span>
                         <span class="tag">Matplotlib</span>
                         <span class="tag">Seaborn</span>
                     </div>
@@ -286,19 +298,15 @@
             </div>
         </section>
 
-        <!-- CONTACTO & REDES SOCIAIS (No Rodapé) -->
-        <section class="contact-section">
-            <h2>Vamos Conversar?</h2>
-            <p>Estou disponível para oportunidades em Ciência de Dados e Análise de Dados.</p>
-            <a href="mailto:seu-email@exemplo.com" class="email-link">seu-email@exemplo.com</a>
+        <!-- RODAPÉ MINIMALISTA COM CONTACTO -->
+        <footer class="footer-section">
+            <!-- Substitua pelo seu e-mail profissional real -->
+            <a href="mailto:seu-email@exemplo.com" class="email-link">tatianaportfoliox@gmail.com</a>
             <div class="social-links">
                 <a href="https://linkedin.com" target="_blank" class="btn">LinkedIn</a>
                 <a href="https://github.com/tatianaalvesx" target="_blank" class="btn">GitHub</a>
             </div>
-        </section>
-
-        <footer>
-            <p>&copy; 2026 Tatiana Alves. Todos os direitos reservados.</p>
+            <p class="copyright">&copy; 2026 Tatiana Alves. Todos os direitos reservados.</p>
         </footer>
     </div>
 </body>
