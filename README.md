@@ -1,6 +1,6 @@
 <div align="center">
   <h1>👋 Olá, sou a Tatiana Alves</h1>
-  <p><b>Cientista de Dados | Apaixonada por transformar dados em decisões de negócio</b></p>
+  <p><b>Cientista de Dados | Data Scientist | Apaixonada por transformar dados em decisões de negócio</b></p>
   
   <p>
     <a href="https://linkedin.com">
