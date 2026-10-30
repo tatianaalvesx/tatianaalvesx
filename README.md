@@ -22,7 +22,7 @@ Cientista de Dados com experiência prática no desenvolvimento de projetos *end
 ## 🎓 Educação & Formação
 * **Formação em Sistemas de Informação
 * **Especialização / Cursos em Destaque:** 
-  * Formação em Ciência de Dados / Python / Machine Learning ([Comuidade DS])
+  * Formação em Ciência de Dados / Python / Machine Learning ([Comunidade DS])
 
 ---
 
