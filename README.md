@@ -49,5 +49,5 @@ Um projeto completo desenvolvido para prever o cancelamento de clientes numa ope
 
 ## 📊 Estatísticas do GitHub
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=SEU-UTILIZADOR&show_icons=true&theme=radical&hide_border=true&include_all_commits=true" alt="GitHub Stats">
+  <img src="https://github-readme-stats.vercel.app/api?username=https://github.com/tatianaalvesx/projeto--churn-telecom/blob/main/README.md&show_icons=true&theme=radical&hide_border=true&include_all_commits=true" alt="GitHub Stats">
 </div>
