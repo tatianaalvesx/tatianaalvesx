@@ -34,7 +34,7 @@ Cientista de Dados com experiência prática no desenvolvimento de projetos *end
 
 ## ⭐ Projeto em Destaque
 
-### 📊 [Previsão de Churn em Telecomunicações](https://github.com/SEU-UTILIZADOR/NOME-DO-REPOSITORIO-CHURN)
+### 📊 [Previsão de Churn em Telecomunicações](https://github.com/tatianaalvesx/projeto--churn-telecom)
 Um projeto completo desenvolvido para prever o cancelamento de clientes numa operadora, unindo estatística e interatividade para gestores.
 
 * **O que o projeto entrega:**
@@ -42,8 +42,8 @@ Um projeto completo desenvolvido para prever o cancelamento de clientes numa ope
   * **Modelo Preditivo:** Regressão Logística treinada e validada em Python.
   * **Aplicação Web Interativa:** Simulador em tempo real publicado na nuvem.
 * **🔗 Links Úteis:**
-  * [Acesso à Aplicação na Nuvem](https://projeto--churn-telecom.streamlit.app/)
-  * [Repositório do Projeto no GitHub](https://github.com/SEU-UTILIZADOR/NOME-DO-REPOSITORIO-CHURN)
+  * [Link de acesso Streamlit](https://projeto--churn-telecom.streamlit.app/)
+  * [Repositório do Projeto no GitHub](https://github.com/tatianaalvesx/projeto--churn-telecom)
 
 ---
 
