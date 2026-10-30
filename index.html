@@ -10,12 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --text-main: #f8fafc;
-            --text-muted: #94a3b8;
-            --accent: #38bdf8;
-            --accent-hover: #0ea5e9;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --border-color: #e2e8f0;
+            --accent: #2563eb;
+            --accent-hover: #1d4ed8;
+            --streamlit-btn: #dc2626;
+            --streamlit-hover: #b91c1c;
         }
         * {
             margin: 0;
@@ -37,20 +40,21 @@
             text-align: center;
             padding: 3rem 1.5rem;
             background: var(--card-bg);
+            border: 1px solid var(--border-color);
             border-radius: 16px;
             margin-bottom: 2rem;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
         }
         h1 {
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 0.5rem;
-            color: #ffffff;
+            color: var(--text-main);
         }
         .subtitle {
             font-size: 1.1rem;
             color: var(--accent);
-            font-weight: 500;
+            font-weight: 600;
             margin-bottom: 1.5rem;
         }
         .social-links {
@@ -63,37 +67,46 @@
             display: inline-flex;
             align-items: center;
             padding: 0.6rem 1.2rem;
-            background-color: #334155;
-            color: #ffffff;
+            background-color: #f1f5f9;
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
             text-decoration: none;
             border-radius: 8px;
             font-weight: 500;
             font-size: 0.95rem;
-            transition: background 0.2s, transform 0.2s;
+            transition: all 0.2s ease;
         }
         .btn:hover {
-            background-color: var(--accent-hover);
+            background-color: var(--accent);
+            color: #ffffff;
+            border-color: var(--accent);
             transform: translateY(-2px);
         }
         .btn-streamlit {
-            background-color: #ff4b4b;
+            background-color: var(--streamlit-btn);
+            color: #ffffff;
+            border-color: var(--streamlit-btn);
         }
         .btn-streamlit:hover {
-            background-color: #e03e3e;
+            background-color: var(--streamlit-hover);
+            color: #ffffff;
+            border-color: var(--streamlit-hover);
         }
         section {
             background: var(--card-bg);
+            border: 1px solid var(--border-color);
             padding: 2rem;
             border-radius: 16px;
             margin-bottom: 1.5rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
         }
         h2 {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             margin-bottom: 1rem;
-            color: #ffffff;
-            border-bottom: 2px solid #334155;
+            color: var(--text-main);
+            border-bottom: 2px solid var(--border-color);
             padding-bottom: 0.5rem;
+            font-weight: 600;
         }
         p {
             color: var(--text-muted);
@@ -112,11 +125,11 @@
         }
         .project-card {
             border-left: 4px solid var(--accent);
-            padding-left: 1rem;
+            padding-left: 1.2rem;
             margin-top: 1rem;
         }
         .project-card h3 {
-            color: #ffffff;
+            color: var(--text-main);
             margin-bottom: 0.5rem;
             font-size: 1.2rem;
         }
@@ -149,13 +162,13 @@
 
         <!-- SOBRE MIM -->
         <section>
-            <h2>🚀 Sobre Mim</h2>
-            <p>Cientista de Dados com experiência prática no desenvolvimento de projetos <em>end-to-end</em> utilizando dados públicos e reais[cite: 2]. Focada em <strong>resolver problemas de negócio</strong>[cite: 2], atuo em todas as etapas de um projeto: desde a Análise Exploratória de Dados (EDA) e modelagem estatística até ao <em>deploy</em> de aplicações web interativas na nuvem[cite: 2].</p>
+            <h2>Sobre Mim</h2>
+            <p>Cientista de Dados com experiência prática no desenvolvimento de projetos completos (end-to-end), transformando dados brutos em soluções estratégicas e insights de negócio. Focada em todo o ciclo analítico, desde a exploração de dados até ao deploy de aplicações web interativas na nuvem.</p>
         </section>
 
         <!-- FERRAMENTAS -->
         <section>
-            <h2>🛠️ Tecnologias e Ferramentas</h2>
+            <h2>Tecnologias e Ferramentas</h2>
             <ul>
                 <li><strong>Linguagens & Core:</strong> Python, Pandas, NumPy, Scikit-Learn</li>
                 <li><strong>Visualização & Apps:</strong> Matplotlib, Seaborn, Streamlit</li>
@@ -165,18 +178,18 @@
 
         <!-- PROJETOS EM DESTAQUE -->
         <section>
-            <h2>⭐ Projeto em Destaque</h2>
+            <h2>Projeto em Destaque</h2>
             <div class="project-card">
                 <h3>Previsão de Churn em Telecomunicações</h3>
-                <p>Um projeto completo desenvolvido para prever o cancelamento de clientes numa operadora, unindo estatística e interatividade para gestores.</p>
-                <p><strong>O que o projeto entrega:</strong></p>
+                <p>Solução preditiva desenvolvida para identificar o risco de cancelamento de clientes numa operadora, unindo rigor estatístico e impacto direto no negócio.</p>
+                <p><strong>Destaques técnicos:</strong></p>
                 <ul>
-                    <li>✨ Análise Exploratória (EDA) e identificação de perfis de alto risco.</li>
-                    <li>🤖 Modelo Preditivo em Machine Learning rigorosamente validado.</li>
-                    <li>🌐 Simulador interativo em tempo real publicado na nuvem.</li>
+                    <li>✨ Análise Exploratória detalhada (EDA) e mapeamento de perfis críticos.</li>
+                    <li>🤖 Modelo de Machine Learning treinado, otimizado e validado.</li>
+                    <li>🌐 Simulador interativo em tempo real disponível na nuvem.</li>
                 </ul>
                 <div class="project-actions">
-                    <a href="https://projeto--churn-telecom.streamlit.app" target="_blank" class="btn btn-streamlit">Testar Aplicação</a>
+                    <a href="https://projeto-churn-telecom.streamlit.app" target="_blank" class="btn btn-streamlit">Testar Aplicação</a>
                     <a href="https://github.com/tatianaalvesx/tatianaalvesx" target="_blank" class="btn">Ver Código</a>
                 </div>
             </div>
