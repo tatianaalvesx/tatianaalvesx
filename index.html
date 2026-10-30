@@ -33,47 +33,57 @@
             padding: 3rem 1rem;
         }
         .container {
-            max-width: 800px;
+            max-width: 850px;
             margin: 0 auto;
         }
+        /* CABEÇALHO E FOTO DE PERFIL */
         header {
             text-align: center;
-            padding: 3rem 1.5rem;
+            padding: 2.5rem 1.5rem;
             background: var(--card-bg);
             border: 1px solid var(--border-color);
             border-radius: 16px;
             margin-bottom: 2rem;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
         }
+        .profile-pic {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--border-color);
+            margin-bottom: 1.2rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
         h1 {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             font-weight: 700;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.3rem;
             color: var(--text-main);
         }
         .subtitle {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             color: var(--accent);
             font-weight: 600;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.2rem;
         }
         .social-links {
             display: flex;
             justify-content: center;
-            gap: 1rem;
+            gap: 0.8rem;
             flex-wrap: wrap;
         }
         .btn {
             display: inline-flex;
             align-items: center;
-            padding: 0.6rem 1.2rem;
+            padding: 0.5rem 1rem;
             background-color: #f1f5f9;
             color: var(--text-main);
             border: 1px solid var(--border-color);
             text-decoration: none;
             border-radius: 8px;
             font-weight: 500;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             transition: all 0.2s ease;
         }
         .btn:hover {
@@ -92,6 +102,7 @@
             color: #ffffff;
             border-color: var(--streamlit-hover);
         }
+        /* SECÇÕES GERAIS */
         section {
             background: var(--card-bg);
             border: 1px solid var(--border-color);
@@ -112,32 +123,75 @@
             color: var(--text-muted);
             margin-bottom: 1rem;
         }
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        li {
-            margin-bottom: 0.8rem;
-            color: var(--text-muted);
-        }
-        li strong {
-            color: var(--text-main);
-        }
-        .project-card {
-            border-left: 4px solid var(--accent);
-            padding-left: 1.2rem;
+        /* PROJETOS COM CAPA */
+        .project-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
             margin-top: 1rem;
         }
-        .project-card h3 {
+        .project-card {
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            overflow: hidden;
+            background: #ffffff;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.08);
+        }
+        .project-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .project-content {
+            padding: 1.5rem;
+        }
+        .project-content h3 {
             color: var(--text-main);
             margin-bottom: 0.5rem;
             font-size: 1.2rem;
         }
         .project-actions {
-            margin-top: 1.5rem;
+            margin-top: 1.2rem;
             display: flex;
+            gap: 0.8rem;
+            flex-wrap: box;
+        }
+        /* HABILIDADES / FERRAMENTAS */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 1rem;
+            margin-top: 1rem;
+        }
+        .skill-category {
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            padding: 1rem;
+            border-radius: 10px;
+        }
+        .skill-category h4 {
+            font-size: 0.95rem;
+            color: var(--text-main);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        .skill-tags {
+            display: flex;
             flex-wrap: wrap;
+            gap: 0.4rem;
+        }
+        .tag {
+            background: #e2e8f0;
+            color: var(--text-main);
+            font-size: 0.8rem;
+            padding: 0.3rem 0.6rem;
+            border-radius: 6px;
+            font-weight: 500;
         }
         footer {
             text-align: center;
@@ -149,10 +203,12 @@
 </head>
 <body>
     <div class="container">
-        <!-- CABEÇALHO -->
+        <!-- CABEÇALHO & FOTO DE PERFIL -->
         <header>
+            <!-- Substitua o link da imagem abaixo pela URL da sua foto ou pelo caminho local (ex: assets/perfil.jpg) -->
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80" alt="Tatiana Alves" class="profile-pic">
             <h1>Tatiana Alves</h1>
-            <p class="subtitle">Cientista de Dados | Data Scientist</p>
+            <p class="subtitle">Cientista de Dados | Data Scientis</p>
             <div class="social-links">
                 <a href="https://linkedin.com" target="_blank" class="btn">LinkedIn</a>
                 <a href="https://github.com/tatianaalvesx" target="_blank" class="btn">GitHub</a>
@@ -166,31 +222,57 @@
             <p>Cientista de Dados com experiência prática no desenvolvimento de projetos completos (end-to-end), transformando dados brutos em soluções estratégicas e insights de negócio. Focada em todo o ciclo analítico, desde a exploração de dados até ao deploy de aplicações web interativas na nuvem.</p>
         </section>
 
-        <!-- FERRAMENTAS -->
+        <!-- PROJETOS COM CAPA -->
         <section>
-            <h2>Tecnologias e Ferramentas</h2>
-            <ul>
-                <li><strong>Linguagens & Core:</strong> Python, Pandas, NumPy, Scikit-Learn</li>
-                <li><strong>Visualização & Apps:</strong> Matplotlib, Seaborn, Streamlit</li>
-                <li><strong>Versionamento & Deploy:</strong> Git, GitHub, Streamlit Cloud</li>
-            </ul>
+            <h2>Projetos em Destaque</h2>
+            <div class="project-grid">
+                <!-- Projeto 1 -->
+                <div class="project-card">
+                    <!-- Substitua o link da imagem abaixo pela capa do seu projeto -->
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=80" alt="Capa Projeto Churn" class="project-img">
+                    <div class="project-content">
+                        <h3>Previsão de Churn em Telecomunicações</h3>
+                        <p>Solução preditiva desenvolvida para identificar o risco de cancelamento de clientes numa operadora, unindo rigor estatístico e impacto direto no negócio.</p>
+                        <p><strong>Destaques:</strong> Análise Exploratória (EDA), Machine Learning Preditivo e Simulador Web Interativo.</p>
+                        <div class="project-actions">
+                            <a href="https://projeto-churn-telecom.streamlit.app" target="_blank" class="btn btn-streamlit">Testar Aplicação</a>
+                            <a href="https://github.com/tatianaalvesx/tatianaalvesx" target="_blank" class="btn">Ver Código</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Futuros projetos poderão ser adicionados aqui facilmente como novos cartões -->
+            </div>
         </section>
 
-        <!-- PROJETOS EM DESTAQUE -->
+        <!-- HABILIDADES E FERRAMENTAS (Modular para novos projetos) -->
         <section>
-            <h2>Projeto em Destaque</h2>
-            <div class="project-card">
-                <h3>Previsão de Churn em Telecomunicações</h3>
-                <p>Solução preditiva desenvolvida para identificar o risco de cancelamento de clientes numa operadora, unindo rigor estatístico e impacto direto no negócio.</p>
-                <p><strong>Destaques técnicos:</strong></p>
-                <ul>
-                    <li>✨ Análise Exploratória detalhada (EDA) e mapeamento de perfis críticos.</li>
-                    <li>🤖 Modelo de Machine Learning treinado, otimizado e validado.</li>
-                    <li>🌐 Simulador interativo em tempo real disponível na nuvem.</li>
-                </ul>
-                <div class="project-actions">
-                    <a href="https://projeto-churn-telecom.streamlit.app" target="_blank" class="btn btn-streamlit">Testar Aplicação</a>
-                    <a href="https://github.com/tatianaalvesx/tatianaalvesx" target="_blank" class="btn">Ver Código</a>
+            <h2>Tecnologias e Habilidades</h2>
+            <p>Ferramentas e competências aplicadas nos projetos do portfólio, expandidas de forma contínua:</p>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h4>Core & Linguagens</h4>
+                    <div class="skill-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">NumPy</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Machine Learning & Análise</h4>
+                    <div class="skill-tags">
+                        <span class="tag">Scikit-Learn</span>
+                        <span class="tag">EDA</span>
+                        <span class="tag">Matplotlib</span>
+                        <span class="tag">Seaborn</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Deploy & Ferramentas</h4>
+                    <div class="skill-tags">
+                        <span class="tag">Streamlit</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">GitHub</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -202,3 +284,4 @@
     </div>
 </body>
 </html>
+            
